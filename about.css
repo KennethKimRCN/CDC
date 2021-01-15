@@ -1,0 +1,164 @@
+/* ABOUT PAGE START */
+.about-page{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+}
+
+.about-page-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    width: 100%;
+    
+    padding: 50px;
+}
+
+.about-page-container img{
+    /* width: 300px; */
+    height: 85%;
+}
+
+.title{
+    font-size: 1.5rem;
+    color: rgb(59, 59, 59);
+    cursor: default;
+}
+
+.subtitle{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: default;
+    /* color: #303030; */
+}
+
+.title-line{
+    display: inline-block;
+    border-bottom: 1px solid grey;
+    width: 50%;
+}
+
+.about-container{
+    display: inline-block;
+    width: 50%;
+}
+
+.subtitle-content{
+    line-height: 1.5;
+    color: #616161;
+    cursor: default;
+}
+
+.title[data-scroll]{
+    transition: 1s;
+    transition-property: opacity;
+    transition-delay: 0.2s;
+}
+
+.title[data-scroll="in"]{
+    opacity: 1;
+}
+
+.title[data-scroll="out"]{
+    opacity: 0;
+}
+
+.subtitle[data-scroll]{
+    transition: 1s;
+    transition-property: opacity;
+    transition-delay: 0.4s;
+}
+
+.subtitle[data-scroll="in"]{
+    opacity: 1;
+}
+
+.subtitle[data-scroll="out"]{
+    opacity: 0;
+}
+
+.subtitle-content[data-scroll]{
+    transition: 1s;
+    transition-property: opacity;
+    transition-delay: 0.6s;
+}
+
+.subtitle-content[data-scroll="in"]{
+    opacity: 1;
+}
+
+.subtitle-content[data-scroll="out"]{
+    opacity: 0;
+}
+
+.title-line[data-scroll]{
+    transition: 1s;
+}
+
+.title-line[data-scroll="in"]{
+    width: 50%;
+}
+
+.title-line[data-scroll="out"]{
+    width: 1%;
+}
+
+.about-logo[data-scroll]{
+    transition: 2s;
+    transition-property: transform, opacity;
+}
+
+.about-logo[data-scroll="in"]{
+    opacity: 1;
+}
+
+.about-logo[data-scroll="out"]{
+    opacity: 0;
+    transform: rotate(360deg);
+}
+/* ABOUT PAGE END */
+
+@media only screen and (max-width: 768px){
+    /* ABOUT PAGE MOBILE START */
+    .about-page{
+        height: 100vh;
+    }
+    .about-container{
+        width: 100%;
+    }
+
+    .about-page-container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .about-page-container img{
+        height: 30%;
+    }
+    .about-page-container :nth-child(2){
+        order: 1;
+    }
+    .about-page-container :nth-child(1){
+        order: 2;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+
+    .subtitle{
+        font-size: 2rem;
+    }
+
+    .about-content{
+        font-size: 0.9rem;
+    }
+    /* ABOUT PAGE MOBILE END */
+}

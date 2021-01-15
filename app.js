@@ -1,3 +1,3 @@
 ScrollOut({
-    targets: '.about-logo, .title, .subtitle, .subtitle-content, .title-line'
+    targets: '.about-logo, .title, .subtitle, .subtitle-content, .title-line, .cdc-container'
 })

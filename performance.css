@@ -1,0 +1,16 @@
+/* PERFORMANCE PAGE START */
+.performance-page-container{
+    position: relative;
+    height: 50vh;
+    background-color: white;
+}
+
+.performance-grid-container{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background-color: grey;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* PERFORMANCE PAGE END */
